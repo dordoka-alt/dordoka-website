@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# VS Code extension testing
+.vscode-test
+
+# pnpm cache
+.pnpm-store
