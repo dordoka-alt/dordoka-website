@@ -1,0 +1,86 @@
+---
+import Button from './Button.astro';
+---
+
+<section>
+    <div class="container hero-layout">
+        <div class="hero-main">
+            <div class="hero-brand">
+                <h1>Transformamos compromisso em mudança estrutural</h1>
+            </div>
+            <div class="typography hero-description">
+                <p>Apoiamos organizações a compreender os seus desafios, desenvolver estratégias e implementar mudanças sustentáveis através de diagnóstico, capacitação e transformação organizacional.</p>
+            </div>  
+            <div class="hero-cta">
+                <Button href="#Contacts">
+                    Falar com a Dordoka
+                </Button>
+            </div>
+        </div>
+        <div class="hero-side">   
+            <div class="hero-image">
+                <img src="/logo/symbol-d.png" alt="Dordoka" />
+            </div>
+            <div class="typography hero-side-description">
+                <p>A sua organização quer promover mudanças mais inclusivas, mas não sabe por onde começar?</p>
+                <p class="bold">A Dordoka ajuda a transformar intenção em práticas concretas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+    .hero-main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .hero-layout {
+        display: grid;
+        grid-template-columns: 1.7fr 0.6fr;
+        font-weight: 500;
+    }
+
+    .hero-side{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hero-side img {
+        transform: translate(-18rem, 16.5rem) rotate(60deg);
+        margin-bottom: 1rem;
+        width: 20rem;
+        height: auto;
+    }  
+
+    .hero-brand {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        max-width: 55rem;
+    }
+
+    .hero-description {
+        margin-bottom: 0.1rem;
+        max-width: 28rem;
+    }
+
+    .hero-side-description {
+        max-width: 20rem;
+        text-align: right;
+        font-size: 1.15rem;
+    }
+
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-layout p{
+        line-height: 1.5;
+    }
+
+</style>

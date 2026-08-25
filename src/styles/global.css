@@ -1,0 +1,28 @@
+
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		font-family: Poppins, sans-serif;
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+    .container {
+        max-width: 85rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .bold {
+        font-weight: 550;
+    }
+
+    .typography {
+        font-size: 1.1rem;
+    }
