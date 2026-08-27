@@ -1,3 +1,7 @@
+---
+import Card from './Card.astro';
+---
+
 <section class="why-dordoka">
     <div class="typography container why-dordoka-content-top">
         <div class="why-dordoka-text">
@@ -7,7 +11,30 @@
             <p>A Dordoka nasceu para apoiar esse processo, ajudando organizações a compreender a sua realidade, definir prioridades e implementar mudanças adaptadas ao seu contexto.</p>
         </div>
         <div class="why-dordoka-image">
-            <img src="/logo/symbol-d.png" alt="Why Dordoka Image" />
+            <img class="logo-symbol" src="/logo/symbol-d.png" alt="Why Dordoka Image" />
+        </div>
+    </div>
+    <div class="container">
+        <h3>Porque acreditamos que:</h3>
+    </div>
+    <div class="container values-grid">
+        <div class="card-position-1">   
+            <Card 
+                title="Cada organização  tem um contexto único."
+                text="Não acreditamos em soluções iguais para todas."
+            />
+        </div>
+        <div class="card-position-2">
+            <Card   
+                title="Compreender antes de agir."
+                text="O diagnóstico orienta decisões informadas."
+            />
+        </div>
+        <div class="card-position-3">
+            <Card
+                title="Mudança duradouras construídas em conjunto."
+                text="Trabalhamos lado a lado com quem vive a realidade da organização."
+            />
         </div>
     </div>
 </section>
@@ -17,25 +44,41 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-content: space-between;
         gap: 2rem;
-        margin-top: 5rem;
-    }
-
-    .why-dordoka-text {
-        flex: 1;
-    }
-
-    .why-dordoka-image {
-        flex: 1;
-    }
-
-    .why-dordoka-image img {
-        width: 100%;
-        height: auto;
     }
 
     .why-dordoka {
-        padding: 8rem 0;
+        padding: 20rem 0;
+    }
+
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+    .card-position-1 {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .card-position-2 {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .card-position-3 {
+        grid-column: 3;
+        grid-row: 2;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
     }
 </style>

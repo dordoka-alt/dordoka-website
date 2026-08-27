@@ -25,4 +25,12 @@
 
     .typography {
         font-size: 1.1rem;
+		line-height: 1.5;
     }
+
+	.logo-symbol {
+    	width: 20rem;
+        height: auto;
+
+	
+}
