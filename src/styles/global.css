@@ -32,5 +32,9 @@
     	width: 20rem;
         height: auto;
 
+	main {
+		padding-top: 5.5rem;
+	}
+
 	
 }
