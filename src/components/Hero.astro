@@ -2,7 +2,7 @@
 import Button from './Button.astro';
 ---
 
-<section>
+<section class="hero">
     <div class="container hero-layout">
         <div class="hero-main">
             <div class="hero-brand">
@@ -81,4 +81,98 @@ import Button from './Button.astro';
         line-height: 1.5;
     }
 
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+    }
+
+    .hero-layout {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-main,
+    .hero-side {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-brand {
+        width: 100%;
+        max-width: 100%;
+        margin: 3rem 0 2rem;
+    }
+
+    .hero-brand h1 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+        font-size: 3rem;
+        line-height: 1.05;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .hero-cta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.hero-side img {
+    width: 10rem;
+    max-width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    transform: translateX(-3.5rem) rotate(60deg);
+    transform-origin: center;console.table( 
+    [...document.querySelectorAll('*')]
+    .filter(el => {
+        const r = el.getBoundingClientRect();
+        return r.right>393 || r.left < 0;
+    })
+    .map(el => { 
+        const r = el.getBoundingClientRect();
+        
+        return {
+            tag: el.tagName,
+            class: el.className, 
+            left: Math.round(r.left),
+            right: Math.round(r.right),
+            width: Math.round(r.width)
+        };
+    })
+
+VM2456:17 Uncaught SyntaxError: missing ) after argument list (at VM2456:17:6)
+}
+
+    .hero-side-description {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
 </style>

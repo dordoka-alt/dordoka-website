@@ -83,5 +83,13 @@ const { title, text, icon, highlight, href } = Astro.props;
     margin-top: 2rem;
     }      
 
+    @media screen and (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        max-width: none;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+}
 
 </style>

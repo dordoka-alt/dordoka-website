@@ -26,7 +26,6 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
         z-index: 1000;
         box-sizing: border-box;
     }
@@ -61,6 +60,63 @@
         transition: color 0.2s;
     }
 
+    @media screen and (max-width: 768px) {
+    nav {
+        left: 0;
+        right: auto;
+        width: 100vw;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding: 0.75rem 1rem;
+        overflow-x: hidden;
+    }
 
+    .nav-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 5.5rem;
+        height: auto;
+    }
+
+    .menu {
+        width: 100%;
+        min-width: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        min-width: 0;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+}
 </style>

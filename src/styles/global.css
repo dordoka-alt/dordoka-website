@@ -31,10 +31,26 @@
 	.logo-symbol {
     	width: 20rem;
         height: auto;
+    }
 
 	main {
 		padding-top: 5.5rem;
 	}
 
-	
+	.container {
+    width: min(100%, 85rem);
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding-top: 7rem;
+    }
 }
