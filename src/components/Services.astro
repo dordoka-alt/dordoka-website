@@ -1,0 +1,39 @@
+---
+import ServiceCard from './ServiceCard.astro';
+---
+
+<section id="services" class="services">
+    <div class="typography container">
+        <h2>O que fazemos</h2>
+        <div class="services-grid">
+            <ServiceCard 
+                title="Apoiamos organizações"
+                text="Trabalhamos com organizações que pretendem compreender melhor os seus desafios e desenvolver mudanças sustentáveis, através de diagnósticos organizacionais e de respostas construídas em função das necessidades identificadas."
+                highlight="Antes de propor soluções, procuramos compreender o contexto, os desafios e as oportunidades da sua organização."
+                icon="🌱"
+            />
+            <ServiceCard 
+                title="Desenvolvemos iniciativas"
+                text="Apoiamos na criação de iniciativas com pessoas, grupos, associações, escolas, universidades, municípios e outras organizações na criação de ideias, eventos, ações e outras alinhadas com a missão da Dordoka."
+                highlight="Tens uma ideia, um evento ou um projeto que gostaria de concretizar? Vamos conversar."
+                icon="🤝"
+                href="#"
+            />
+        </div>
+    </div>
+</section>
+
+<style>
+    .services {
+        scroll-margin-top: 8rem;
+        padding: 5rem 0;
+    }
+
+    .services-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+        padding-bottom: 8rem;
+    }
+</style>
