@@ -41,7 +41,10 @@ import Button from './Button.astro';
         display: grid;
         grid-template-columns: 1.7fr 0.6fr;
         font-weight: 500;
+        max-width: 1200px;
+        margin: 0 auto;
     }
+
 
     .hero-side{
         display: flex;
@@ -108,22 +111,22 @@ import Button from './Button.astro';
     .hero-brand {
         width: 100%;
         max-width: 100%;
-        margin: 3rem 0 2rem;
+        margin: 1.5rem 0 2rem;
     }
 
     .hero-brand h1 {
         width: 100%;
         margin: 0;
         text-align: center;
-
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1.05;
     }
 
     .hero-description {
         width: 100%;
         max-width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -134,44 +137,27 @@ import Button from './Button.astro';
     }
 
     .hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding: 2rem 0;
-}
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding: 1rem 0 0.1rem;
+    }
 
-.hero-side img {
-    width: 10rem;
-    max-width: 60vw;
-    height: auto;
-    margin: 0 auto;
-    transform: translateX(-3.5rem) rotate(60deg);
-    transform-origin: center;console.table( 
-    [...document.querySelectorAll('*')]
-    .filter(el => {
-        const r = el.getBoundingClientRect();
-        return r.right>393 || r.left < 0;
-    })
-    .map(el => { 
-        const r = el.getBoundingClientRect();
-        
-        return {
-            tag: el.tagName,
-            class: el.className, 
-            left: Math.round(r.left),
-            right: Math.round(r.right),
-            width: Math.round(r.width)
-        };
-    })
-
-VM2456:17 Uncaught SyntaxError: missing ) after argument list (at VM2456:17:6)
-}
+    .hero-side img {
+        width: 10rem;
+        max-width: 60vw;
+        height: auto;
+        margin: 0 auto;
+        transform: rotate(60deg);
+        transform-origin: center;
+    }
 
     .hero-side-description {
         width: 100%;
         max-width: 100%;
-        margin-top: 2rem;
+        margin-top: 0rem;
+        font-size: 1rem;
         text-align: center;
     }
 }

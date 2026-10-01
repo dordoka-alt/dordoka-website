@@ -7,8 +7,13 @@
 
         <p>Se acredita que a Dordoka pode contribuir para esse caminho, teremos todo o gosto em conversar.</p>
 
-        <img src="/logo/symbol-d.png" alt="Tartaruga Dordoka">
-
+        <div class="contact-image">
+    <img
+        class="contact-turtle"
+        src="/logo/symbol-d.png"
+        alt="Tartaruga Dordoka"/>
+    </div>
+        <p class="contact-label">Envie-nos um e-mail</p>
         <a href="mailto:geral@dordoka.org">
             geral@dordoka.org
         </a>
@@ -26,6 +31,7 @@
     max-width: 100rem;
     margin: 0 auto;
     text-align: center;
+    font-size: 1rem;
 }
 
 .contact-content h2 {
@@ -59,5 +65,48 @@
 .location {
     color: #777;
     margin-top: .75rem;
+}
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 100%;
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .contact-content {
+        width: 100%;
+        max-width: none;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .contact-content h2 {
+        margin-bottom: 1.25rem;
+    }
+
+    .contact-content p {
+        width: 100%;
+        max-width: 22rem;
+        margin: 1rem auto;
+        line-height: 1.6;
+    }
+
+    .contact-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .contact-content .contact-turtle {
+        width: 9rem;
+        height: auto;
+        margin: 1rem auto 1.25rem;
+        transform: none;
+    }
+
+    .contact-content a {
+        font-size: 1.35rem;
+        margin-top: 0;
+    }
 }
 </style>

@@ -51,6 +51,20 @@
 
 @media screen and (max-width: 768px) {
     main {
-        padding-top: 7rem;
+        padding-top: 6.5rem;
+    }
+
+    #why-dordoka {
+        scroll-margin-top: -2rem;
+    }
+
+    #services {
+        scroll-margin-top: 3rem;
+    }
+
+    #contact {
+        scroll-margin-top: 2rem;
     }
 }
+}
+    
