@@ -1,55 +1,64 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: Poppins, sans-serif;
+}
 
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family: Poppins, sans-serif;
-	}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-	}
-
-    .container {
-        max-width: 85rem;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
-
-    .bold {
-        font-weight: 550;
-    }
-
-    .typography {
-        font-size: 1.1rem;
-		line-height: 1.5;
-    }
-
-	.logo-symbol {
-    	width: 20rem;
-        height: auto;
-    }
-
-	main {
-		padding-top: 5.5rem;
-	}
-
-	.container {
+.container {
     width: min(100%, 85rem);
     margin-inline: auto;
     padding-inline: 2rem;
 }
 
-@media (max-width: 768px) {
+.bold {
+    font-weight: 550;
+}
+
+.typography {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.logo-symbol {
+    width: 20rem;
+    height: auto;
+}
+
+main {
+    padding-top: 5.5rem;
+}
+
+
+/* Desktop */
+
+#why-dordoka {
+    scroll-margin-top: -10rem;
+}
+
+#services {
+    scroll-margin-top: 8rem;
+}
+
+#contact {
+    scroll-margin-top: 2rem;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
     .container {
         padding-inline: 1rem;
     }
-}
 
-@media screen and (max-width: 768px) {
     main {
         padding-top: 6.5rem;
     }
@@ -59,12 +68,10 @@
     }
 
     #services {
-        scroll-margin-top: 3rem;
+        scroll-margin-top: 2rem;
     }
 
     #contact {
         scroll-margin-top: 2rem;
     }
 }
-}
-    
